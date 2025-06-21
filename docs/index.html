@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+</head>
+<body>
+    <div class="top-half">
+        <img src="./foto.jpg" alt="Foto" height="180px" width="180px">
+        <h1>Valcir dos Santos Junior</h1>
+        <h2>Desenvolvimento de software multiplataforma</h2>  
+    </div>
+        
+    <div class="tab">
+        <button class="active" onclick="openContent(event, 1)">Sobre</button>
+        <button onclick="openContent(event, 2)">Projetos acadêmicos</button>
+        <button onclick="openContent(event, 3)">Informações</button>
+    </div>
+
+    <div class="bottom-half">
+        <div id="a" class="tabcontent">
+            <h3>Sobre mim</h3>
+            <p>
+                Tenho grande interesse por computadores e tecnologia.
+                Desde cedo me interessou como os sistemas funcionam e como a tecnologia pode ser usada para resolver problemas do dia a dia.
+                Gosto de aprender sobre softwares, montar e entender hardwares, além de acompanhar as inovações do setor.
+                Estou sempre buscando novos conhecimentos e experiências que me ajudem a crescer na área.
+            </p>
+        </div>
+
+        <div id="b" class="tabcontent" style="display: none;">
+            <h3>Projetos</h3>
+            <p>1º semestre - (HTML, CSS, JS, Node, PostgreSQL)</p>
+            <p><a href="https://github.com/gjulianni/Innovatech">Innovatech</a>
+                - Atuação: Pequenas mudanças no frontend</p> <br>
+
+            <p>2º semestre - (React, Typescript, Node, PostgreSQL)</p>
+            <p><a href="https://github.com/andremc331/NutriTech">NutriTech</a>
+                - Atuação: Criação de telas e integração com o backend </p> <br>
+
+            <p>3º semestre - (React, Typescript, Node, MongoDB)</p>
+            <p><a href="https://github.com/AndreHVentura/Cloud.io">Cloud.io</a>
+                - Atuação: Criação de menus, telas e o sistema de alertas</p>
+        </div>
+
+        <div id="c" class="tabcontent" style="display: none;">
+            <h3>Contatos</h3>
+            <p>Github: <a href="https://github.com/valcir-jr">Github</a></p>
+            <p>Email: valcir.santos@fatec.sp.gov.br</p> <br>
+            <h3>Tecnologias</h3>
+            <ul>
+                <li>Javascript/Typescript</li>
+                <li>Node</li>
+                <li>React</li>
+                <li>PostgreSQL/MongoDB</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
