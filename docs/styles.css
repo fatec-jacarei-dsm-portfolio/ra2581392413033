@@ -30,6 +30,7 @@ body {
     max-width: 900px;
     min-width: 900px;
     animation: fadeEffect 1s;
+    overflow-y: auto;
 }
 
 @keyframes fadeEffect {
